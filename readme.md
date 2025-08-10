@@ -1,6 +1,6 @@
 
 # IP
-## Externe IP Adresse
+## Eigene externe IP Adresse
 * curl -4 ifconfig.co
 * curl -4 ifconfig.co/ip
 * wget -q -O - http://www.ddnss.de/meineip.php | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
