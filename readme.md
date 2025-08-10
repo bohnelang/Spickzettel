@@ -27,8 +27,8 @@
 
 
 # Linux 
-## Grub
-* GRUB_CMDLINE_LINUX="text nomodeset  ipv6.disable=1"
+## Grub /etc/default/grub
+* GRUB_CMDLINE_LINUX="text nomodeset noplymouth ipv6.disable=1"
 + update-grub
 
 ## SSHD
