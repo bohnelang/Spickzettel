@@ -5,10 +5,12 @@
 * curl -4 ifconfig.co/ip
 
 ## Geodaten:
+### Eigene 
 * curl -4 ifconfig.co/country
 * Alles: curl -4 ifconfig.co/json
+### Fremde
 * COUNTRY=$(curl -s https://reallyfreegeoip.org/csv/$IP |  grep "CountryName" | sed s/"<CountryName>"//g  | sed s/"<\/CountryName>"//g | awk '{$1=$1};1' )
-* 
+
 
 
 
