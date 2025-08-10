@@ -8,6 +8,8 @@
 ### Eigene 
 * curl -4 ifconfig.co/country
 * Alles: curl -4 ifconfig.co/json
+* MYIIP=`wget -q -O - http://www.ddnss.de/meineip.php | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'`
+*  
 ### Fremde
 * COUNTRY=$(curl -s https://reallyfreegeoip.org/csv/$IP |  grep "CountryName" | sed s/"<CountryName>"//g  | sed s/"<\/CountryName>"//g | awk '{$1=$1};1' )
 
