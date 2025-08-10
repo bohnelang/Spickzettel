@@ -42,7 +42,7 @@ fi
 
 IP=$1
 
-COUNTRY=$(curl -s https://reallyfreegeoip.org/csv/$IP |  grep "CountryName" | sed s/"<CountryName>"//g  | sed s/"<\/CountryName>"//g | awk '{$1=$1};1' )
+COUNTRY=$(curl -s -4 ifconfig.co/country)
 
 # Handle errors in geoip lookup
 if [[ $COUNTRY == Error* || -z $COUNTRY ]]; then
