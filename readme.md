@@ -29,7 +29,7 @@
 # Linux 
 ## Grub /etc/default/grub
 * GRUB_CMDLINE_LINUX="text nomodeset noplymouth ipv6.disable=1"
-+ update-grub
++ update-grub2
 
 ## SSHD
 ### Geo-Blocking
