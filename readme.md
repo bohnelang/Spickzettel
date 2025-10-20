@@ -43,7 +43,7 @@ sshd : LOCAL
 sshd : 127.
 sshd : 192.168.
 sshd : .de
-sshd : aclexec /etc/host_allow_geoip.sh %a
+sshd : ALL: aclexec /etc/host_allow_geoip.sh %a
 ```
 
 /etc/host_allow_geoip.sh
