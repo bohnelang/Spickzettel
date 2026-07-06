@@ -80,3 +80,33 @@ else
 fi
 
 ```
+
+
+## DNS
+### etc
+```
+/etc/resolv.conf
+```
+
+### resolver
+```
+/run/systemd/resolve/resolv.conf
+resolvectl --no-pager |grep Server
+systemctl status systemd-resolved
+```
+
+## Netplan 
+```
+/etc/netplan/ --> *.yaml
+sudo netplan apply
+```
+
+## systemd
+```
+/etc/systemd/resolved.conf
+```
+
+## /etc/network/interfaces
+```
+dns-nameservers
+```
