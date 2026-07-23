@@ -86,6 +86,9 @@ fi
 ### etc
 ```
 /etc/resolv.conf
+
+vi /etc/systemd/resolved.conf
+systemctl restart systemd-resolved
 ```
 
 ### resolver
@@ -93,6 +96,7 @@ fi
 /run/systemd/resolve/resolv.conf
 resolvectl --no-pager |grep Server
 systemctl status systemd-resolved
+
 ```
 
 ## Netplan 
